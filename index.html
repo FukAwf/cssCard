@@ -15,7 +15,7 @@
 
         <!-- set link here -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/fontawesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
         
 
     <!-- close head here -->
@@ -27,7 +27,7 @@
         <!-- open header here -->
         <header>
             <a href="#" class="logo">Minardo</a>
-            <div class="menu-toggle">R</div>
+            <div class="menu-toggle"></div>
 
             <!-- open navagition menu here -->
             <nav>
@@ -60,14 +60,14 @@
 
 
         <!-- set javascript here -->
-        <script src="https://unpkg.com/dwt@16.2.4/dist/dynamsoft.webtwain.min.js"> </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/5.1.0/screenfull.min.js"
-            integrity="sha512-SGPHIoS+NsP1NUL5RohNpDs44JlF36tXLN6H3Cw+EUyenEc5zPXWqfw9D+xmvR00QYUYewQIJQ6P5yH82Vw6Fg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/5.1.0/screenfull.js"
-            integrity="sha512-Dv9aNdD27P2hvSJag3mpFwumC/UVIpWaVE6I4c8Nmx1pJiPd6DMdWGZZ5SFiys/M8oOSD1zVGgp1IxTJeWBg5Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="text/javascript" src="assets/js/script.js"></script>
+        <script src="https//code.jquery.com/jquery-3.3.1.js" integrity="sha256-2KoK7MbOyxpgUVvAK/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+            $(document).ready(function(){
+                $('.menu-toggle').click(function(){
+                    $('.menu-toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
 
     <!-- close body here -->
     </body>

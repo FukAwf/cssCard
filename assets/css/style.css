@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@500;700&display=swap|3d-float|fire-animation|shadow-multiple');
-/* @import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@1,500&display=swap|3d-float'); */
+
 /* ( Replace the CSS from the ( 'css2 version' ) to the ( 'css version' ) in the import url address. ) */
 
 /* set global */
@@ -36,7 +36,7 @@ header {
 
 /* set logo */
 .logo {
-    color: #048dfd;
+    color: rgb(87, 143, 255);
     width: 60px;
     height: 60px;
     font-size: 36px;
@@ -123,8 +123,25 @@ nav ul li a:hover {
         font-family: fontAwesome;
         line-height: 40px;
     }
+    .menu-toggle.active:before
+    {
+        content: '\f00d';
+    }
     nav 
     {
         display: none;
+    }
+    nav.active 
+    {
+        display: block;
+        width: 100%;
+    }
+    nav.active ul
+    {
+        display: block;
+    }
+    nav.active ul list-style
+    {
+        margin: 0;
     }
 }
