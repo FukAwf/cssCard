@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@500;700&display=swap|3d-float|fire-animation|shadow-multiple');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@1,500&display=swap|3d-float'); */
+/* ( Replace the CSS from the ( 'css2 version' ) to the ( 'css version' ) in the import url address. ) */
+
+/* set global */
+* {
+    box-sizing: border-box;
+    /* background: #000000; */
+}
+
+/* set body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/letterR.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* set header */
+header {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #262626;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 2px 5px 10px rgba(87, 143, 255, 0.808);
+}
+
+/* set logo */
+.logo {
+    color: #048dfd;
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10%;
+}
+
+/* set font-effect-3d-float */
+.font-effect-3d-float {
+    float: left;
+}
+
+/* set nav */
+nav {
+    float: right;
+}
+
+/* set clearfix */
+.clearfix {
+    clear: both;
+}
+
+/* set ul */
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* set li */
+nav ul li {
+    list-style: none;
+}
+
+/* set a */
+nav ul li a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #969696;
+}
+
+/* set active and active:hover */
+nav ul li a.active,
+nav ul li a:hover {
+    background: #5a5656;
+    color: #c2bfbf;
+    box-shadow: 2px 5px 10px rgba(87, 143, 255, 0.808);
+    transition: 0.5s;
+}
+
+/* set media */
+@media (max-width: 1200px) {
+    header
+    {
+        margin: 20px;
+    }
+}
+@media (max-width: 768px) {
+    menu-toggle
+    {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(87, 143, 255);
+    }
+    .menu-toggle:before
+    {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    nav 
+    {
+        display: none;
+    }
+}
